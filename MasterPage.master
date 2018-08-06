@@ -1,0 +1,58 @@
+<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table border="0" cellpadding="0" cellspacing="0" style="width: 80%; height: 80%">
+            <tr>
+                <td colspan="2" style="height: 179px; text-align: center;">
+                    <div style="z-index: 102; left: 14px; width: 100px; position: absolute; top: 19px;
+                        height: 84px">
+                        <asp:LoginView ID="LoginView1" runat="server">
+                            <AnonymousTemplate>
+                    <asp:Login ID="Login1" runat="server" BackColor="#FFFBD6" BorderColor="#FFDFAD"
+                        BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana"
+                        Font-Size="0.8em" ForeColor="#333333" Width="200px" CreateUserText="Register." CreateUserUrl="~/register.aspx" Height="100px" UserNameLabelText="Username:">
+                        <TitleTextStyle BackColor="#990000" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+                        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+                        <TextBoxStyle Font-Size="0.8em" />
+                        <LoginButtonStyle BackColor="White" BorderColor="#CC9966" BorderStyle="Solid" BorderWidth="1px"
+                            Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" />
+                    </asp:Login>
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                    <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                            </LoggedInTemplate>
+                        </asp:LoginView>
+                    </div>
+                    &nbsp; &nbsp;&nbsp;
+                    <div style="z-index: 101; left: 293px; width: 100px; position: absolute; top: 16px;
+                        height: 69px">
+                    <img src="logo.jpg" /></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 200px" valign="top">
+                    &nbsp;<br />
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" MaximumDynamicDisplayLevels="1"
+                        StaticDisplayLevels="10">
+                    </asp:Menu>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td style="width: 338px">
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server" />
+                </td>
+            </tr>
+        </table>
+        <br />
+        &nbsp;<asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+    </div>
+    </form>
+</body>
+</html>

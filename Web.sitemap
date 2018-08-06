@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+        <siteMapNode url="default.aspx" title="Home."  description="The main page." />
+        <siteMapNode url="why.aspx" title="Why?"  description="Start here." />
+        <siteMapNode url="add.aspx" title="Report Issue." description="Report a problem." />
+        <siteMapNode url="issues.aspx" title="View Issues." description="See open and closed issues." />
+        <siteMapNode url="progress.aspx" title="Management Progress." description="How the management is getting things done." />
+        <siteMapNode url="wedo.aspx" title="What Can We Do?" description="What the tenants can do to make  a better place." />
+      <siteMapNode url="davesthoughts.aspx" title="Dave's Thoughts." description="Short articles on the  situation." />
+      <siteMapNode url="contacts.aspx" title="Who Can We Contact?" description="A list with contact information of organizations and government agencies that deal with consumer complaitns." />
+    </siteMapNode>
+</siteMap>
